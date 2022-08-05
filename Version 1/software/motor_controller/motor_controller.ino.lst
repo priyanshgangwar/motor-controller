@@ -1,0 +1,1490 @@
+
+C:\Users\priyansh\AppData\Local\Temp\arduino_build_662197/motor_controller.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	3c c0       	rjmp	.+120    	; 0x7a <__ctors_end>
+   2:	49 c0       	rjmp	.+146    	; 0x96 <__bad_interrupt>
+   4:	48 c0       	rjmp	.+144    	; 0x96 <__bad_interrupt>
+   6:	47 c0       	rjmp	.+142    	; 0x96 <__bad_interrupt>
+   8:	46 c0       	rjmp	.+140    	; 0x96 <__bad_interrupt>
+   a:	45 c0       	rjmp	.+138    	; 0x96 <__bad_interrupt>
+   c:	e4 c1       	rjmp	.+968    	; 0x3d6 <__vector_6>
+   e:	43 c0       	rjmp	.+134    	; 0x96 <__bad_interrupt>
+  10:	42 c0       	rjmp	.+132    	; 0x96 <__bad_interrupt>
+  12:	41 c0       	rjmp	.+130    	; 0x96 <__bad_interrupt>
+  14:	40 c0       	rjmp	.+128    	; 0x96 <__bad_interrupt>
+  16:	3f c0       	rjmp	.+126    	; 0x96 <__bad_interrupt>
+  18:	3e c0       	rjmp	.+124    	; 0x96 <__bad_interrupt>
+  1a:	3d c0       	rjmp	.+122    	; 0x96 <__bad_interrupt>
+  1c:	3c c0       	rjmp	.+120    	; 0x96 <__bad_interrupt>
+  1e:	3b c0       	rjmp	.+118    	; 0x96 <__bad_interrupt>
+  20:	3a c0       	rjmp	.+116    	; 0x96 <__bad_interrupt>
+  22:	39 c0       	rjmp	.+114    	; 0x96 <__bad_interrupt>
+  24:	38 c0       	rjmp	.+112    	; 0x96 <__bad_interrupt>
+
+00000026 <__trampolines_end>:
+__trampolines_start():
+  26:	00 00       	nop
+  28:	3a 00       	.word	0x003a	; ????
+  2a:	37 00       	.word	0x0037	; ????
+  2c:	00 00       	nop
+  2e:	31 00       	.word	0x0031	; ????
+
+00000030 <port_to_output_PGM>:
+  30:	00 00 3b 00 38 00 00 00 32 00                       ..;.8...2.
+
+0000003a <port_to_input_PGM>:
+  3a:	00 00 39 00 36 00 00 00 30 00                       ..9.6...0.
+
+00000044 <digital_pin_to_port_PGM>:
+  44:	04 04 01 01 04 04 04 04 04 02 02 02 02 02 02 02     ................
+  54:	02 01                                               ..
+
+00000056 <digital_pin_to_bit_mask_PGM>:
+  56:	01 02 02 01 04 08 10 20 40 01 02 04 08 10 20 40     ....... @..... @
+  66:	80 04                                               ..
+
+00000068 <digital_pin_to_timer_PGM>:
+  68:	00 00 00 00 00 00 00 02 00 00 00 01 03 04 00 00     ................
+	...
+
+0000007a <__ctors_end>:
+__dtors_end():
+  7a:	11 24       	eor	r1, r1
+  7c:	1f be       	out	0x3f, r1	; 63
+  7e:	cf ed       	ldi	r28, 0xDF	; 223
+  80:	cd bf       	out	0x3d, r28	; 61
+
+00000082 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  82:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  84:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  86:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  88:	01 c0       	rjmp	.+2      	; 0x8c <.do_clear_bss_start>
+
+0000008a <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  8a:	1d 92       	st	X+, r1
+
+0000008c <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  8c:	aa 36       	cpi	r26, 0x6A	; 106
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  8e:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  90:	e1 f7       	brne	.-8      	; 0x8a <.do_clear_bss_loop>
+.do_clear_bss_start():
+  92:	eb d1       	rcall	.+982    	; 0x46a <main>
+  94:	6c c2       	rjmp	.+1240   	; 0x56e <_exit>
+
+00000096 <__bad_interrupt>:
+__vector_1():
+  96:	b4 cf       	rjmp	.-152    	; 0x0 <__vectors>
+
+00000098 <turnOffPWM>:
+turnOffPWM():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+  #if defined(TCCR0A) && defined(COM0A1)
+  if( timer == TIMER0A){
+  98:	81 30       	cpi	r24, 0x01	; 1
+  9a:	21 f4       	brne	.+8      	; 0xa4 <turnOffPWM+0xc>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:68
+    cbi(TCCR0A, COM0A1);
+  9c:	80 b7       	in	r24, 0x30	; 48
+  9e:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:75
+  } else
+  #endif
+
+  #if defined(TCCR0A) && defined(COM0B1)
+  if( timer == TIMER0B){
+    cbi(TCCR0A, COM0B1);
+  a0:	80 bf       	out	0x30, r24	; 48
+  a2:	08 95       	ret
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:74
+    //cbi(TCCR0A, COM0A0);
+  } else
+  #endif
+
+  #if defined(TCCR0A) && defined(COM0B1)
+  if( timer == TIMER0B){
+  a4:	82 30       	cpi	r24, 0x02	; 2
+  a6:	19 f4       	brne	.+6      	; 0xae <turnOffPWM+0x16>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:75
+    cbi(TCCR0A, COM0B1);
+  a8:	80 b7       	in	r24, 0x30	; 48
+  aa:	8f 7d       	andi	r24, 0xDF	; 223
+  ac:	f9 cf       	rjmp	.-14     	; 0xa0 <turnOffPWM+0x8>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:81
+    //cbi(TCCR0A, COM0B0);
+  } else
+  #endif
+
+  #if defined(TCCR1A) && defined(COM1A1)
+  if( timer == TIMER1A){
+  ae:	83 30       	cpi	r24, 0x03	; 3
+  b0:	21 f4       	brne	.+8      	; 0xba <turnOffPWM+0x22>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:82
+    cbi(TCCR1A, COM1A1);
+  b2:	8f b5       	in	r24, 0x2f	; 47
+  b4:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:116
+  } else
+  #endif
+
+  #if defined(TCCR1A) && defined(COM1B1)
+  if( timer == TIMER1B){
+    cbi(TCCR1A, COM1B1);
+  b6:	8f bd       	out	0x2f, r24	; 47
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:134
+  #endif
+
+    {
+    }
+
+}
+  b8:	08 95       	ret
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:115
+  #endif
+  } else
+  #endif
+
+  #if defined(TCCR1A) && defined(COM1B1)
+  if( timer == TIMER1B){
+  ba:	84 30       	cpi	r24, 0x04	; 4
+  bc:	e9 f7       	brne	.-6      	; 0xb8 <turnOffPWM+0x20>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:116
+    cbi(TCCR1A, COM1B1);
+  be:	8f b5       	in	r24, 0x2f	; 47
+  c0:	8f 7d       	andi	r24, 0xDF	; 223
+  c2:	f9 cf       	rjmp	.-14     	; 0xb6 <turnOffPWM+0x1e>
+
+000000c4 <digitalRead>:
+digitalRead():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:166
+    SREG = oldSREG;
+  }
+}
+
+int digitalRead(uint8_t pin)
+{
+  c4:	cf 93       	push	r28
+  c6:	df 93       	push	r29
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:168
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  uint8_t timer = digitalPinToTimer(pin);
+  c8:	28 2f       	mov	r18, r24
+  ca:	30 e0       	ldi	r19, 0x00	; 0
+  cc:	f9 01       	movw	r30, r18
+  ce:	e8 59       	subi	r30, 0x98	; 152
+  d0:	ff 4f       	sbci	r31, 0xFF	; 255
+  d2:	84 91       	lpm	r24, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:169
+  uint8_t bit = digitalPinToBitMask(pin);
+  d4:	f9 01       	movw	r30, r18
+  d6:	ea 5a       	subi	r30, 0xAA	; 170
+  d8:	ff 4f       	sbci	r31, 0xFF	; 255
+  da:	d4 91       	lpm	r29, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:170
+  uint8_t port = digitalPinToPort(pin);
+  dc:	f9 01       	movw	r30, r18
+  de:	ec 5b       	subi	r30, 0xBC	; 188
+  e0:	ff 4f       	sbci	r31, 0xFF	; 255
+  e2:	c4 91       	lpm	r28, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:172
+
+  if (port == NOT_A_PIN) return LOW;
+  e4:	cc 23       	and	r28, r28
+  e6:	99 f0       	breq	.+38     	; 0x10e <__stack+0x2f>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:176
+
+  // If the pin that support PWM output, we need to turn it off
+  // before getting a digital reading.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+  e8:	81 11       	cpse	r24, r1
+  ea:	d6 df       	rcall	.-84     	; 0x98 <turnOffPWM>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:178
+
+  if (*portInputRegister(port) & bit) return HIGH;
+  ec:	ec 2f       	mov	r30, r28
+  ee:	f0 e0       	ldi	r31, 0x00	; 0
+  f0:	ee 0f       	add	r30, r30
+  f2:	ff 1f       	adc	r31, r31
+  f4:	e6 5c       	subi	r30, 0xC6	; 198
+  f6:	ff 4f       	sbci	r31, 0xFF	; 255
+  f8:	a5 91       	lpm	r26, Z+
+  fa:	b4 91       	lpm	r27, Z
+  fc:	ec 91       	ld	r30, X
+  fe:	ed 23       	and	r30, r29
+ 100:	81 e0       	ldi	r24, 0x01	; 1
+ 102:	90 e0       	ldi	r25, 0x00	; 0
+ 104:	09 f4       	brne	.+2      	; 0x108 <__stack+0x29>
+ 106:	80 e0       	ldi	r24, 0x00	; 0
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:180
+  return LOW;
+}
+ 108:	df 91       	pop	r29
+ 10a:	cf 91       	pop	r28
+ 10c:	08 95       	ret
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:172
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  uint8_t port = digitalPinToPort(pin);
+
+  if (port == NOT_A_PIN) return LOW;
+ 10e:	80 e0       	ldi	r24, 0x00	; 0
+ 110:	90 e0       	ldi	r25, 0x00	; 0
+ 112:	fa cf       	rjmp	.-12     	; 0x108 <__stack+0x29>
+
+00000114 <digitalWrite>:
+digitalWrite():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:137
+    }
+
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+ 114:	1f 93       	push	r17
+ 116:	cf 93       	push	r28
+ 118:	df 93       	push	r29
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:139
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  uint8_t timer = digitalPinToTimer(pin);
+ 11a:	28 2f       	mov	r18, r24
+ 11c:	30 e0       	ldi	r19, 0x00	; 0
+ 11e:	f9 01       	movw	r30, r18
+ 120:	e8 59       	subi	r30, 0x98	; 152
+ 122:	ff 4f       	sbci	r31, 0xFF	; 255
+ 124:	84 91       	lpm	r24, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:140
+  uint8_t bit = digitalPinToBitMask(pin);
+ 126:	f9 01       	movw	r30, r18
+ 128:	ea 5a       	subi	r30, 0xAA	; 170
+ 12a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 12c:	d4 91       	lpm	r29, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:141
+  uint8_t port = digitalPinToPort(pin);
+ 12e:	f9 01       	movw	r30, r18
+ 130:	ec 5b       	subi	r30, 0xBC	; 188
+ 132:	ff 4f       	sbci	r31, 0xFF	; 255
+ 134:	c4 91       	lpm	r28, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:144
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 136:	cc 23       	and	r28, r28
+ 138:	a1 f0       	breq	.+40     	; 0x162 <digitalWrite+0x4e>
+ 13a:	16 2f       	mov	r17, r22
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:148
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 13c:	81 11       	cpse	r24, r1
+ 13e:	ac df       	rcall	.-168    	; 0x98 <turnOffPWM>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:150
+
+  out = portOutputRegister(port);
+ 140:	ec 2f       	mov	r30, r28
+ 142:	f0 e0       	ldi	r31, 0x00	; 0
+ 144:	ee 0f       	add	r30, r30
+ 146:	ff 1f       	adc	r31, r31
+ 148:	e0 5d       	subi	r30, 0xD0	; 208
+ 14a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 14c:	a5 91       	lpm	r26, Z+
+ 14e:	b4 91       	lpm	r27, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:153
+
+  if (val == LOW) {
+    uint8_t oldSREG = SREG;
+ 150:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:152
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+
+  if (val == LOW) {
+ 152:	11 11       	cpse	r17, r1
+ 154:	0a c0       	rjmp	.+20     	; 0x16a <digitalWrite+0x56>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:154
+    uint8_t oldSREG = SREG;
+    cli();
+ 156:	f8 94       	cli
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:155
+    *out &= ~bit;
+ 158:	ec 91       	ld	r30, X
+ 15a:	d0 95       	com	r29
+ 15c:	de 23       	and	r29, r30
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:160
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+    *out |= bit;
+ 15e:	dc 93       	st	X, r29
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:161
+    SREG = oldSREG;
+ 160:	8f bf       	out	0x3f, r24	; 63
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:163
+  }
+}
+ 162:	df 91       	pop	r29
+ 164:	cf 91       	pop	r28
+ 166:	1f 91       	pop	r17
+ 168:	08 95       	ret
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:159
+    cli();
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+ 16a:	f8 94       	cli
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:160
+    *out |= bit;
+ 16c:	ec 91       	ld	r30, X
+ 16e:	de 2b       	or	r29, r30
+ 170:	f6 cf       	rjmp	.-20     	; 0x15e <digitalWrite+0x4a>
+
+00000172 <pinMode>:
+pinMode():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 172:	cf 93       	push	r28
+ 174:	df 93       	push	r29
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:35
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  uint8_t bit = digitalPinToBitMask(pin);
+ 176:	90 e0       	ldi	r25, 0x00	; 0
+ 178:	fc 01       	movw	r30, r24
+ 17a:	ea 5a       	subi	r30, 0xAA	; 170
+ 17c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 17e:	24 91       	lpm	r18, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:36
+  uint8_t port = digitalPinToPort(pin);
+ 180:	8c 5b       	subi	r24, 0xBC	; 188
+ 182:	9f 4f       	sbci	r25, 0xFF	; 255
+ 184:	fc 01       	movw	r30, r24
+ 186:	84 91       	lpm	r24, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:39
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 188:	88 23       	and	r24, r24
+ 18a:	d1 f0       	breq	.+52     	; 0x1c0 <pinMode+0x4e>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:41
+
+  reg = portModeRegister(port);
+ 18c:	90 e0       	ldi	r25, 0x00	; 0
+ 18e:	88 0f       	add	r24, r24
+ 190:	99 1f       	adc	r25, r25
+ 192:	fc 01       	movw	r30, r24
+ 194:	ea 5d       	subi	r30, 0xDA	; 218
+ 196:	ff 4f       	sbci	r31, 0xFF	; 255
+ 198:	a5 91       	lpm	r26, Z+
+ 19a:	b4 91       	lpm	r27, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:42
+  out = portOutputRegister(port);
+ 19c:	fc 01       	movw	r30, r24
+ 19e:	e0 5d       	subi	r30, 0xD0	; 208
+ 1a0:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1a2:	c5 91       	lpm	r28, Z+
+ 1a4:	d4 91       	lpm	r29, Z
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:50
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg &= ~bit;
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+ 1a6:	62 30       	cpi	r22, 0x02	; 2
+ 1a8:	71 f4       	brne	.+28     	; 0x1c6 <pinMode+0x54>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:51
+    uint8_t oldSREG = SREG;
+ 1aa:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:52
+                cli();
+ 1ac:	f8 94       	cli
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:53
+    *reg &= ~bit;
+ 1ae:	3c 91       	ld	r19, X
+ 1b0:	82 2f       	mov	r24, r18
+ 1b2:	80 95       	com	r24
+ 1b4:	83 23       	and	r24, r19
+ 1b6:	8c 93       	st	X, r24
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:54
+    *out |= bit;
+ 1b8:	e8 81       	ld	r30, Y
+ 1ba:	2e 2b       	or	r18, r30
+ 1bc:	28 83       	st	Y, r18
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:55
+    SREG = oldSREG;
+ 1be:	9f bf       	out	0x3f, r25	; 63
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:62
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg |= bit;
+    SREG = oldSREG;
+  }
+}
+ 1c0:	df 91       	pop	r29
+ 1c2:	cf 91       	pop	r28
+ 1c4:	08 95       	ret
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:57
+                cli();
+    *reg &= ~bit;
+    *out |= bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 1c6:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:58
+                cli();
+ 1c8:	f8 94       	cli
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:59
+    *reg |= bit;
+ 1ca:	ec 91       	ld	r30, X
+ 1cc:	2e 2b       	or	r18, r30
+ 1ce:	2c 93       	st	X, r18
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring_digital.c:60
+    SREG = oldSREG;
+ 1d0:	8f bf       	out	0x3f, r24	; 63
+ 1d2:	f6 cf       	rjmp	.-20     	; 0x1c0 <pinMode+0x4e>
+
+000001d4 <micros>:
+micros():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:187
+}
+
+unsigned long micros()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG, t;
+ 1d4:	3f b7       	in	r19, 0x3f	; 63
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:189
+
+  cli();
+ 1d6:	f8 94       	cli
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:190
+  m = millis_timer_overflow_count;
+ 1d8:	80 91 66 00 	lds	r24, 0x0066	; 0x800066 <millis_timer_overflow_count>
+ 1dc:	90 91 67 00 	lds	r25, 0x0067	; 0x800067 <millis_timer_overflow_count+0x1>
+ 1e0:	a0 91 68 00 	lds	r26, 0x0068	; 0x800068 <millis_timer_overflow_count+0x2>
+ 1e4:	b0 91 69 00 	lds	r27, 0x0069	; 0x800069 <millis_timer_overflow_count+0x3>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:192
+#if defined(TCNT0) && (TIMER_TO_USE_FOR_MILLIS == 0) && !defined(TCW0)
+  t = TCNT0;
+ 1e8:	22 b7       	in	r18, 0x32	; 50
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:207
+
+#if defined(TIFR0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+  if ((TIFR0 & _BV(TOV0)) && (t < 255))
+    m++;
+#elif defined(TIFR) && (TIMER_TO_USE_FOR_MILLIS == 0)
+  if ((TIFR & _BV(TOV0)) && (t < 255))
+ 1ea:	08 b6       	in	r0, 0x38	; 56
+ 1ec:	01 fe       	sbrs	r0, 1
+ 1ee:	05 c0       	rjmp	.+10     	; 0x1fa <micros+0x26>
+ 1f0:	2f 3f       	cpi	r18, 0xFF	; 255
+ 1f2:	19 f0       	breq	.+6      	; 0x1fa <micros+0x26>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:208
+    m++;
+ 1f4:	01 96       	adiw	r24, 0x01	; 1
+ 1f6:	a1 1d       	adc	r26, r1
+ 1f8:	b1 1d       	adc	r27, r1
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:217
+#elif defined(TIFR) && (TIMER_TO_USE_FOR_MILLIS == 1)
+  if ((TIFR & _BV(TOV1)) && (t < 255))
+    m++;
+#endif
+
+  SREG = oldSREG;
+ 1fa:	3f bf       	out	0x3f, r19	; 63
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:224
+
+#if F_CPU < 1000000L
+  return ((m << 8) + t) * MillisTimer_Prescale_Value * (1000000L/F_CPU);
+#else
+#if (MillisTimer_Prescale_Value % clockCyclesPerMicrosecond() == 0 ) // Can we just do it the naive way? If so great!
+  return ((m << 8) + t) * (MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+ 1fc:	ba 2f       	mov	r27, r26
+ 1fe:	a9 2f       	mov	r26, r25
+ 200:	98 2f       	mov	r25, r24
+ 202:	88 27       	eor	r24, r24
+ 204:	bc 01       	movw	r22, r24
+ 206:	cd 01       	movw	r24, r26
+ 208:	62 0f       	add	r22, r18
+ 20a:	71 1d       	adc	r23, r1
+ 20c:	81 1d       	adc	r24, r1
+ 20e:	91 1d       	adc	r25, r1
+ 210:	43 e0       	ldi	r20, 0x03	; 3
+ 212:	66 0f       	add	r22, r22
+ 214:	77 1f       	adc	r23, r23
+ 216:	88 1f       	adc	r24, r24
+ 218:	99 1f       	adc	r25, r25
+ 21a:	4a 95       	dec	r20
+ 21c:	d1 f7       	brne	.-12     	; 0x212 <micros+0x3e>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:267
+  //the high part gets divided by cCPuS then multiplied by the prescaler. Then take the low 8 bits plus the high part modulo-cCPuS to correct for the division, then multiply that by the prescaler value first before dividing by cCPuS, and finally add the two together.
+  //return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + ((t+(((m<<8)%clockCyclesPerMicrosecond())) * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond()));
+  return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + (t * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+#endif
+#endif
+}
+ 21e:	08 95       	ret
+
+00000220 <delay>:
+delay():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:277
+  // Empty
+}
+void yield(void) __attribute__ ((weak, alias("__empty")));
+
+void delay(unsigned long ms)
+{
+ 220:	cf 92       	push	r12
+ 222:	df 92       	push	r13
+ 224:	ef 92       	push	r14
+ 226:	ff 92       	push	r15
+ 228:	cf 93       	push	r28
+ 22a:	df 93       	push	r29
+ 22c:	6b 01       	movw	r12, r22
+ 22e:	7c 01       	movw	r14, r24
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:279
+  #if (F_CPU>=1000000L)
+  uint16_t start = (uint16_t)micros();
+ 230:	d1 df       	rcall	.-94     	; 0x1d4 <micros>
+ 232:	eb 01       	movw	r28, r22
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:283
+
+  while (ms > 0) {
+    yield();
+    while (((uint16_t)micros() - start) >= 1000 && ms) {
+ 234:	cf df       	rcall	.-98     	; 0x1d4 <micros>
+ 236:	6c 1b       	sub	r22, r28
+ 238:	7d 0b       	sbc	r23, r29
+ 23a:	68 3e       	cpi	r22, 0xE8	; 232
+ 23c:	73 40       	sbci	r23, 0x03	; 3
+ 23e:	a0 f0       	brcs	.+40     	; 0x268 <delay+0x48>
+ 240:	c1 14       	cp	r12, r1
+ 242:	d1 04       	cpc	r13, r1
+ 244:	e1 04       	cpc	r14, r1
+ 246:	f1 04       	cpc	r15, r1
+ 248:	39 f4       	brne	.+14     	; 0x258 <delay+0x38>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:293
+  #else
+  uint32_t start = millis();
+  while((millis() - start) < ms)  /* NOP */yield();
+  return;
+  #endif
+}
+ 24a:	df 91       	pop	r29
+ 24c:	cf 91       	pop	r28
+ 24e:	ff 90       	pop	r15
+ 250:	ef 90       	pop	r14
+ 252:	df 90       	pop	r13
+ 254:	cf 90       	pop	r12
+ 256:	08 95       	ret
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:284
+  uint16_t start = (uint16_t)micros();
+
+  while (ms > 0) {
+    yield();
+    while (((uint16_t)micros() - start) >= 1000 && ms) {
+      ms--;
+ 258:	81 e0       	ldi	r24, 0x01	; 1
+ 25a:	c8 1a       	sub	r12, r24
+ 25c:	d1 08       	sbc	r13, r1
+ 25e:	e1 08       	sbc	r14, r1
+ 260:	f1 08       	sbc	r15, r1
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:285
+      start += 1000;
+ 262:	c8 51       	subi	r28, 0x18	; 24
+ 264:	dc 4f       	sbci	r29, 0xFC	; 252
+ 266:	e6 cf       	rjmp	.-52     	; 0x234 <delay+0x14>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:281
+void delay(unsigned long ms)
+{
+  #if (F_CPU>=1000000L)
+  uint16_t start = (uint16_t)micros();
+
+  while (ms > 0) {
+ 268:	c1 14       	cp	r12, r1
+ 26a:	d1 04       	cpc	r13, r1
+ 26c:	e1 04       	cpc	r14, r1
+ 26e:	f1 04       	cpc	r15, r1
+ 270:	09 f7       	brne	.-62     	; 0x234 <delay+0x14>
+ 272:	eb cf       	rjmp	.-42     	; 0x24a <delay+0x2a>
+
+00000274 <checkTank(unsigned char, unsigned char, unsigned char)>:
+_Z9checkTankhhh():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:102
+  0 - if water lavel below bottom sensor
+  1 - if water lavel below middle sensor but above bottom sensor
+  2 - if water lavel below top sensor but above middle sensor
+  3 - if water lavel above top sensor
+*/
+byte checkTank(byte top, byte middle, byte bottom) {
+ 274:	cf 93       	push	r28
+ 276:	df 93       	push	r29
+ 278:	d6 2f       	mov	r29, r22
+ 27a:	c4 2f       	mov	r28, r20
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:103
+  if (digitalRead(top) == LOW) {
+ 27c:	23 df       	rcall	.-442    	; 0xc4 <digitalRead>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:104
+    return 3;
+ 27e:	23 e0       	ldi	r18, 0x03	; 3
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:103
+  1 - if water lavel below middle sensor but above bottom sensor
+  2 - if water lavel below top sensor but above middle sensor
+  3 - if water lavel above top sensor
+*/
+byte checkTank(byte top, byte middle, byte bottom) {
+  if (digitalRead(top) == LOW) {
+ 280:	89 2b       	or	r24, r25
+ 282:	59 f0       	breq	.+22     	; 0x29a <checkTank(unsigned char, unsigned char, unsigned char)+0x26>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:106
+    return 3;
+  }
+  else if (digitalRead(middle) == LOW) {
+ 284:	8d 2f       	mov	r24, r29
+ 286:	1e df       	rcall	.-452    	; 0xc4 <digitalRead>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:107
+    return 2;
+ 288:	22 e0       	ldi	r18, 0x02	; 2
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:106
+*/
+byte checkTank(byte top, byte middle, byte bottom) {
+  if (digitalRead(top) == LOW) {
+    return 3;
+  }
+  else if (digitalRead(middle) == LOW) {
+ 28a:	89 2b       	or	r24, r25
+ 28c:	31 f0       	breq	.+12     	; 0x29a <checkTank(unsigned char, unsigned char, unsigned char)+0x26>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:109
+    return 2;
+  }
+  else if (digitalRead(bottom) == LOW) {
+ 28e:	8c 2f       	mov	r24, r28
+ 290:	19 df       	rcall	.-462    	; 0xc4 <digitalRead>
+ 292:	21 e0       	ldi	r18, 0x01	; 1
+ 294:	89 2b       	or	r24, r25
+ 296:	09 f0       	breq	.+2      	; 0x29a <checkTank(unsigned char, unsigned char, unsigned char)+0x26>
+ 298:	20 e0       	ldi	r18, 0x00	; 0
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:113
+    return 1;
+  }
+  return 0;
+}
+ 29a:	82 2f       	mov	r24, r18
+ 29c:	df 91       	pop	r29
+ 29e:	cf 91       	pop	r28
+ 2a0:	08 95       	ret
+
+000002a2 <checkManualOnB()>:
+_Z14checkManualOnBv():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:143
+      }
+    }
+  }
+}
+
+void checkManualOnB() {
+ 2a2:	cf 93       	push	r28
+ 2a4:	df 93       	push	r29
+isManualOn():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:187
+  }
+}
+
+//returns true if switch is pressed else returns false
+bool isManualOn(byte manual_start_switch) {
+  if (digitalRead(manual_start_switch) == LOW) {
+ 2a6:	80 e1       	ldi	r24, 0x10	; 16
+ 2a8:	0d df       	rcall	.-486    	; 0xc4 <digitalRead>
+ 2aa:	89 2b       	or	r24, r25
+ 2ac:	09 f0       	breq	.+2      	; 0x2b0 <checkManualOnB()+0xe>
+ 2ae:	51 c0       	rjmp	.+162    	; 0x352 <checkManualOnB()+0xb0>
+_Z14checkManualOnBv():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:145
+  }
+}
+
+void checkManualOnB() {
+  if (isManualOn(b_manual_start) == true) {
+    digitalWrite(valve_relay, HIGH);
+ 2b0:	61 e0       	ldi	r22, 0x01	; 1
+ 2b2:	86 e0       	ldi	r24, 0x06	; 6
+ 2b4:	2f df       	rcall	.-418    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:146
+    digitalWrite(supply_selector_relay, HIGH);
+ 2b6:	61 e0       	ldi	r22, 0x01	; 1
+ 2b8:	84 e0       	ldi	r24, 0x04	; 4
+ 2ba:	2c df       	rcall	.-424    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:147
+    delay(valve_wait_time);
+ 2bc:	60 e4       	ldi	r22, 0x40	; 64
+ 2be:	7f e1       	ldi	r23, 0x1F	; 31
+ 2c0:	80 e0       	ldi	r24, 0x00	; 0
+ 2c2:	90 e0       	ldi	r25, 0x00	; 0
+ 2c4:	ad df       	rcall	.-166    	; 0x220 <delay>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:148
+    digitalWrite(motor_relay, HIGH);
+ 2c6:	61 e0       	ldi	r22, 0x01	; 1
+ 2c8:	85 e0       	ldi	r24, 0x05	; 5
+ 2ca:	24 df       	rcall	.-440    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:149
+    digitalWrite(b_buzzer, HIGH);
+ 2cc:	61 e0       	ldi	r22, 0x01	; 1
+ 2ce:	81 e0       	ldi	r24, 0x01	; 1
+ 2d0:	21 df       	rcall	.-446    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:151
+    byte counter = 0;
+    flag = true;
+ 2d2:	81 e0       	ldi	r24, 0x01	; 1
+ 2d4:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <_edata>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:152
+    byte beep_time = long_beep;
+ 2d8:	d4 e1       	ldi	r29, 0x14	; 20
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:150
+    digitalWrite(valve_relay, HIGH);
+    digitalWrite(supply_selector_relay, HIGH);
+    delay(valve_wait_time);
+    digitalWrite(motor_relay, HIGH);
+    digitalWrite(b_buzzer, HIGH);
+    byte counter = 0;
+ 2da:	c0 e0       	ldi	r28, 0x00	; 0
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:154
+    flag = true;
+    byte beep_time = long_beep;
+    while (true) {
+      if (checkTank(b_tank_top, b_tank_middle, b_tank_bottom) == 3 && flag) {
+ 2dc:	4f e0       	ldi	r20, 0x0F	; 15
+ 2de:	6e e0       	ldi	r22, 0x0E	; 14
+ 2e0:	8d e0       	ldi	r24, 0x0D	; 13
+ 2e2:	c8 df       	rcall	.-112    	; 0x274 <checkTank(unsigned char, unsigned char, unsigned char)>
+ 2e4:	83 30       	cpi	r24, 0x03	; 3
+ 2e6:	29 f5       	brne	.+74     	; 0x332 <checkManualOnB()+0x90>
+ 2e8:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <_edata>
+ 2ec:	88 23       	and	r24, r24
+ 2ee:	09 f1       	breq	.+66     	; 0x332 <checkManualOnB()+0x90>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:157
+        beep_time = short_beep;
+        counter = 0;
+        flag = false;
+ 2f0:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <_edata>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:155
+    byte counter = 0;
+    flag = true;
+    byte beep_time = long_beep;
+    while (true) {
+      if (checkTank(b_tank_top, b_tank_middle, b_tank_bottom) == 3 && flag) {
+        beep_time = short_beep;
+ 2f4:	da e0       	ldi	r29, 0x0A	; 10
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:161
+        counter = 0;
+        flag = false;
+      }
+      if (counter == beep_time) {
+        digitalWrite(b_buzzer, !digitalRead(b_buzzer));
+        counter = 0;
+ 2f6:	c0 e0       	ldi	r28, 0x00	; 0
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:163
+      }
+      delay(50);
+ 2f8:	62 e3       	ldi	r22, 0x32	; 50
+ 2fa:	70 e0       	ldi	r23, 0x00	; 0
+ 2fc:	80 e0       	ldi	r24, 0x00	; 0
+ 2fe:	90 e0       	ldi	r25, 0x00	; 0
+ 300:	8f df       	rcall	.-226    	; 0x220 <delay>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:164
+      counter++;
+ 302:	cf 5f       	subi	r28, 0xFF	; 255
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:165
+      if(digitalRead(b_supply_detect) == HIGH){
+ 304:	88 e0       	ldi	r24, 0x08	; 8
+ 306:	de de       	rcall	.-580    	; 0xc4 <digitalRead>
+ 308:	01 97       	sbiw	r24, 0x01	; 1
+ 30a:	f1 f4       	brne	.+60     	; 0x348 <checkManualOnB()+0xa6>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:166
+        digitalWrite(motor_relay, LOW);
+ 30c:	60 e0       	ldi	r22, 0x00	; 0
+ 30e:	85 e0       	ldi	r24, 0x05	; 5
+ 310:	01 df       	rcall	.-510    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:167
+        digitalWrite(valve_relay, LOW);
+ 312:	60 e0       	ldi	r22, 0x00	; 0
+ 314:	86 e0       	ldi	r24, 0x06	; 6
+ 316:	fe de       	rcall	.-516    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:168
+        digitalWrite(supply_selector_relay, LOW);
+ 318:	60 e0       	ldi	r22, 0x00	; 0
+ 31a:	84 e0       	ldi	r24, 0x04	; 4
+ 31c:	fb de       	rcall	.-522    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:169
+        digitalWrite(a_buzzer, LOW);
+ 31e:	60 e0       	ldi	r22, 0x00	; 0
+ 320:	80 e0       	ldi	r24, 0x00	; 0
+ 322:	f8 de       	rcall	.-528    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:170
+        delay(valve_wait_time);
+ 324:	60 e4       	ldi	r22, 0x40	; 64
+ 326:	7f e1       	ldi	r23, 0x1F	; 31
+ 328:	80 e0       	ldi	r24, 0x00	; 0
+ 32a:	90 e0       	ldi	r25, 0x00	; 0
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:183
+        delay(valve_wait_time);
+        break;
+      }
+    }
+  }
+}
+ 32c:	df 91       	pop	r29
+ 32e:	cf 91       	pop	r28
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:170
+      if(digitalRead(b_supply_detect) == HIGH){
+        digitalWrite(motor_relay, LOW);
+        digitalWrite(valve_relay, LOW);
+        digitalWrite(supply_selector_relay, LOW);
+        digitalWrite(a_buzzer, LOW);
+        delay(valve_wait_time);
+ 330:	77 cf       	rjmp	.-274    	; 0x220 <delay>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:159
+      if (checkTank(b_tank_top, b_tank_middle, b_tank_bottom) == 3 && flag) {
+        beep_time = short_beep;
+        counter = 0;
+        flag = false;
+      }
+      if (counter == beep_time) {
+ 332:	cd 13       	cpse	r28, r29
+ 334:	e1 cf       	rjmp	.-62     	; 0x2f8 <checkManualOnB()+0x56>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:160
+        digitalWrite(b_buzzer, !digitalRead(b_buzzer));
+ 336:	81 e0       	ldi	r24, 0x01	; 1
+ 338:	c5 de       	rcall	.-630    	; 0xc4 <digitalRead>
+ 33a:	61 e0       	ldi	r22, 0x01	; 1
+ 33c:	89 2b       	or	r24, r25
+ 33e:	09 f0       	breq	.+2      	; 0x342 <checkManualOnB()+0xa0>
+ 340:	60 e0       	ldi	r22, 0x00	; 0
+ 342:	81 e0       	ldi	r24, 0x01	; 1
+ 344:	e7 de       	rcall	.-562    	; 0x114 <digitalWrite>
+ 346:	d7 cf       	rjmp	.-82     	; 0x2f6 <checkManualOnB()+0x54>
+isManualOn():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:187
+  }
+}
+
+//returns true if switch is pressed else returns false
+bool isManualOn(byte manual_start_switch) {
+  if (digitalRead(manual_start_switch) == LOW) {
+ 348:	80 e1       	ldi	r24, 0x10	; 16
+ 34a:	bc de       	rcall	.-648    	; 0xc4 <digitalRead>
+ 34c:	89 2b       	or	r24, r25
+ 34e:	f1 f6       	brne	.-68     	; 0x30c <checkManualOnB()+0x6a>
+ 350:	c5 cf       	rjmp	.-118    	; 0x2dc <checkManualOnB()+0x3a>
+_Z14checkManualOnBv():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:183
+        delay(valve_wait_time);
+        break;
+      }
+    }
+  }
+}
+ 352:	df 91       	pop	r29
+ 354:	cf 91       	pop	r28
+ 356:	08 95       	ret
+
+00000358 <checkManualOnA()>:
+_Z14checkManualOnAv():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:115
+    return 1;
+  }
+  return 0;
+}
+
+void checkManualOnA() {
+ 358:	cf 93       	push	r28
+ 35a:	df 93       	push	r29
+isManualOn():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:187
+  }
+}
+
+//returns true if switch is pressed else returns false
+bool isManualOn(byte manual_start_switch) {
+  if (digitalRead(manual_start_switch) == LOW) {
+ 35c:	8c e0       	ldi	r24, 0x0C	; 12
+ 35e:	b2 de       	rcall	.-668    	; 0xc4 <digitalRead>
+ 360:	89 2b       	or	r24, r25
+ 362:	b1 f5       	brne	.+108    	; 0x3d0 <checkManualOnA()+0x78>
+_Z14checkManualOnAv():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:117
+  return 0;
+}
+
+void checkManualOnA() {
+  if (isManualOn(a_manual_start)) {
+    digitalWrite(motor_relay, HIGH);
+ 364:	61 e0       	ldi	r22, 0x01	; 1
+ 366:	85 e0       	ldi	r24, 0x05	; 5
+ 368:	d5 de       	rcall	.-598    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:118
+    digitalWrite(a_buzzer, HIGH);
+ 36a:	61 e0       	ldi	r22, 0x01	; 1
+ 36c:	80 e0       	ldi	r24, 0x00	; 0
+ 36e:	d2 de       	rcall	.-604    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:120
+    byte counter = 0;
+    flag = true;
+ 370:	81 e0       	ldi	r24, 0x01	; 1
+ 372:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <_edata>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:121
+    byte beep_time = long_beep;
+ 376:	d4 e1       	ldi	r29, 0x14	; 20
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:119
+
+void checkManualOnA() {
+  if (isManualOn(a_manual_start)) {
+    digitalWrite(motor_relay, HIGH);
+    digitalWrite(a_buzzer, HIGH);
+    byte counter = 0;
+ 378:	c0 e0       	ldi	r28, 0x00	; 0
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:123
+    flag = true;
+    byte beep_time = long_beep;
+    while (true) {
+      if ((checkTank(a_tank_top, a_tank_middle, a_tank_bottom) == 3) && flag) {
+ 37a:	4b e0       	ldi	r20, 0x0B	; 11
+ 37c:	6a e0       	ldi	r22, 0x0A	; 10
+ 37e:	89 e0       	ldi	r24, 0x09	; 9
+ 380:	79 df       	rcall	.-270    	; 0x274 <checkTank(unsigned char, unsigned char, unsigned char)>
+ 382:	83 30       	cpi	r24, 0x03	; 3
+ 384:	d1 f4       	brne	.+52     	; 0x3ba <checkManualOnA()+0x62>
+ 386:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <_edata>
+ 38a:	88 23       	and	r24, r24
+ 38c:	b1 f0       	breq	.+44     	; 0x3ba <checkManualOnA()+0x62>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:126
+        beep_time = short_beep;
+        counter = 0;
+        flag = false;
+ 38e:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <_edata>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:124
+    byte counter = 0;
+    flag = true;
+    byte beep_time = long_beep;
+    while (true) {
+      if ((checkTank(a_tank_top, a_tank_middle, a_tank_bottom) == 3) && flag) {
+        beep_time = short_beep;
+ 392:	da e0       	ldi	r29, 0x0A	; 10
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:130
+        counter = 0;
+        flag = false;
+      }
+      if (counter == beep_time) {
+        digitalWrite(a_buzzer, !digitalRead(a_buzzer));
+        counter = 0;
+ 394:	c0 e0       	ldi	r28, 0x00	; 0
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:132
+      }
+      delay(50);
+ 396:	62 e3       	ldi	r22, 0x32	; 50
+ 398:	70 e0       	ldi	r23, 0x00	; 0
+ 39a:	80 e0       	ldi	r24, 0x00	; 0
+ 39c:	90 e0       	ldi	r25, 0x00	; 0
+ 39e:	40 df       	rcall	.-384    	; 0x220 <delay>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:133
+      counter++;
+ 3a0:	cf 5f       	subi	r28, 0xFF	; 255
+isManualOn():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:187
+  }
+}
+
+//returns true if switch is pressed else returns false
+bool isManualOn(byte manual_start_switch) {
+  if (digitalRead(manual_start_switch) == LOW) {
+ 3a2:	8c e0       	ldi	r24, 0x0C	; 12
+ 3a4:	8f de       	rcall	.-738    	; 0xc4 <digitalRead>
+ 3a6:	89 2b       	or	r24, r25
+ 3a8:	41 f3       	breq	.-48     	; 0x37a <checkManualOnA()+0x22>
+_Z14checkManualOnAv():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:135
+        counter = 0;
+      }
+      delay(50);
+      counter++;
+      if (!isManualOn(a_manual_start)) {
+        digitalWrite(motor_relay, LOW);
+ 3aa:	60 e0       	ldi	r22, 0x00	; 0
+ 3ac:	85 e0       	ldi	r24, 0x05	; 5
+ 3ae:	b2 de       	rcall	.-668    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:136
+        digitalWrite(a_buzzer, LOW);
+ 3b0:	60 e0       	ldi	r22, 0x00	; 0
+ 3b2:	80 e0       	ldi	r24, 0x00	; 0
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:141
+        break;
+      }
+    }
+  }
+}
+ 3b4:	df 91       	pop	r29
+ 3b6:	cf 91       	pop	r28
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:136
+      }
+      delay(50);
+      counter++;
+      if (!isManualOn(a_manual_start)) {
+        digitalWrite(motor_relay, LOW);
+        digitalWrite(a_buzzer, LOW);
+ 3b8:	ad ce       	rjmp	.-678    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:128
+      if ((checkTank(a_tank_top, a_tank_middle, a_tank_bottom) == 3) && flag) {
+        beep_time = short_beep;
+        counter = 0;
+        flag = false;
+      }
+      if (counter == beep_time) {
+ 3ba:	cd 13       	cpse	r28, r29
+ 3bc:	ec cf       	rjmp	.-40     	; 0x396 <checkManualOnA()+0x3e>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:129
+        digitalWrite(a_buzzer, !digitalRead(a_buzzer));
+ 3be:	80 e0       	ldi	r24, 0x00	; 0
+ 3c0:	81 de       	rcall	.-766    	; 0xc4 <digitalRead>
+ 3c2:	61 e0       	ldi	r22, 0x01	; 1
+ 3c4:	89 2b       	or	r24, r25
+ 3c6:	09 f0       	breq	.+2      	; 0x3ca <checkManualOnA()+0x72>
+ 3c8:	60 e0       	ldi	r22, 0x00	; 0
+ 3ca:	80 e0       	ldi	r24, 0x00	; 0
+ 3cc:	a3 de       	rcall	.-698    	; 0x114 <digitalWrite>
+ 3ce:	e2 cf       	rjmp	.-60     	; 0x394 <checkManualOnA()+0x3c>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:141
+        digitalWrite(a_buzzer, LOW);
+        break;
+      }
+    }
+  }
+}
+ 3d0:	df 91       	pop	r29
+ 3d2:	cf 91       	pop	r28
+ 3d4:	08 95       	ret
+
+000003d6 <__vector_6>:
+__vector_6():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:130
+#else
+
+#error Millis() timer not defined!
+
+#endif
+{
+ 3d6:	1f 92       	push	r1
+ 3d8:	0f 92       	push	r0
+ 3da:	0f b6       	in	r0, 0x3f	; 63
+ 3dc:	0f 92       	push	r0
+ 3de:	11 24       	eor	r1, r1
+ 3e0:	2f 93       	push	r18
+ 3e2:	3f 93       	push	r19
+ 3e4:	8f 93       	push	r24
+ 3e6:	9f 93       	push	r25
+ 3e8:	af 93       	push	r26
+ 3ea:	bf 93       	push	r27
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:133
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access)
+  unsigned long m = millis_timer_millis;
+ 3ec:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <millis_timer_millis>
+ 3f0:	90 91 63 00 	lds	r25, 0x0063	; 0x800063 <millis_timer_millis+0x1>
+ 3f4:	a0 91 64 00 	lds	r26, 0x0064	; 0x800064 <millis_timer_millis+0x2>
+ 3f8:	b0 91 65 00 	lds	r27, 0x0065	; 0x800065 <millis_timer_millis+0x3>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:134
+  unsigned char f = millis_timer_fract;
+ 3fc:	30 91 61 00 	lds	r19, 0x0061	; 0x800061 <millis_timer_fract>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:146
+    f -= FRACT_MAX;
+    m += 1;
+  }
+...rmv */
+
+  f += FRACT_INC;
+ 400:	26 e0       	ldi	r18, 0x06	; 6
+ 402:	23 0f       	add	r18, r19
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:148
+
+  if (f >= FRACT_MAX)
+ 404:	2d 37       	cpi	r18, 0x7D	; 125
+ 406:	68 f1       	brcs	.+90     	; 0x462 <__LOCK_REGION_LENGTH__+0x62>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:150
+  {
+    f -= FRACT_MAX;
+ 408:	29 e8       	ldi	r18, 0x89	; 137
+ 40a:	23 0f       	add	r18, r19
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:152
+  m += 1;
+    m += MILLIS_INC;
+ 40c:	03 96       	adiw	r24, 0x03	; 3
+ 40e:	a1 1d       	adc	r26, r1
+ 410:	b1 1d       	adc	r27, r1
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:159
+  else
+  {
+    m += MILLIS_INC;
+  }
+
+  millis_timer_fract = f;
+ 412:	20 93 61 00 	sts	0x0061, r18	; 0x800061 <millis_timer_fract>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:160
+  millis_timer_millis = m;
+ 416:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <millis_timer_millis>
+ 41a:	90 93 63 00 	sts	0x0063, r25	; 0x800063 <millis_timer_millis+0x1>
+ 41e:	a0 93 64 00 	sts	0x0064, r26	; 0x800064 <millis_timer_millis+0x2>
+ 422:	b0 93 65 00 	sts	0x0065, r27	; 0x800065 <millis_timer_millis+0x3>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:161
+  millis_timer_overflow_count++;
+ 426:	80 91 66 00 	lds	r24, 0x0066	; 0x800066 <millis_timer_overflow_count>
+ 42a:	90 91 67 00 	lds	r25, 0x0067	; 0x800067 <millis_timer_overflow_count+0x1>
+ 42e:	a0 91 68 00 	lds	r26, 0x0068	; 0x800068 <millis_timer_overflow_count+0x2>
+ 432:	b0 91 69 00 	lds	r27, 0x0069	; 0x800069 <millis_timer_overflow_count+0x3>
+ 436:	01 96       	adiw	r24, 0x01	; 1
+ 438:	a1 1d       	adc	r26, r1
+ 43a:	b1 1d       	adc	r27, r1
+ 43c:	80 93 66 00 	sts	0x0066, r24	; 0x800066 <millis_timer_overflow_count>
+ 440:	90 93 67 00 	sts	0x0067, r25	; 0x800067 <millis_timer_overflow_count+0x1>
+ 444:	a0 93 68 00 	sts	0x0068, r26	; 0x800068 <millis_timer_overflow_count+0x2>
+ 448:	b0 93 69 00 	sts	0x0069, r27	; 0x800069 <millis_timer_overflow_count+0x3>
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:168
+
+//MICROSECONDS_PER_MILLIS_OVERFLOW=2048
+//MILLIS_INC=2
+//FRACT_INC=6
+//FRACT_MAX=125
+}
+ 44c:	bf 91       	pop	r27
+ 44e:	af 91       	pop	r26
+ 450:	9f 91       	pop	r25
+ 452:	8f 91       	pop	r24
+ 454:	3f 91       	pop	r19
+ 456:	2f 91       	pop	r18
+ 458:	0f 90       	pop	r0
+ 45a:	0f be       	out	0x3f, r0	; 63
+ 45c:	0f 90       	pop	r0
+ 45e:	1f 90       	pop	r1
+ 460:	18 95       	reti
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:156
+  m += 1;
+    m += MILLIS_INC;
+  }
+  else
+  {
+    m += MILLIS_INC;
+ 462:	02 96       	adiw	r24, 0x02	; 2
+ 464:	a1 1d       	adc	r26, r1
+ 466:	b1 1d       	adc	r27, r1
+ 468:	d4 cf       	rjmp	.-88     	; 0x412 <__LOCK_REGION_LENGTH__+0x12>
+
+0000046a <main>:
+main():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/main.cpp:6
+#include <Arduino.h>
+
+int main(void)
+{
+  #ifdef TUNED_OSCCAL_VALUE
+  OSCCAL = TUNED_OSCCAL_VALUE; //set the oscillator calibration value based on the pins_arduino.h file. If this is not set, it will be optimised away
+ 46a:	81 b7       	in	r24, 0x31	; 49
+ 46c:	81 bf       	out	0x31, r24	; 49
+init():
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:802
+  #endif
+  #endif
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0) && defined(WGM01)
+  sbi(TCCR0A, WGM01);
+ 46e:	80 b7       	in	r24, 0x30	; 48
+ 470:	82 60       	ori	r24, 0x02	; 2
+ 472:	80 bf       	out	0x30, r24	; 48
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:803
+  sbi(TCCR0A, WGM00);
+ 474:	80 b7       	in	r24, 0x30	; 48
+ 476:	81 60       	ori	r24, 0x01	; 1
+ 478:	80 bf       	out	0x30, r24	; 48
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:826
+  #endif
+
+  // Millis timer is always processor clock divided by MillisTimer_Prescale_Value (64)
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+   #ifdef TCCR0B
+    TCCR0B = (TCCR0B & ~((1<<CS02)|(1<<CS01)|(1<<CS00))) | (MillisTimer_Prescale_Index << CS00);
+ 47a:	83 b7       	in	r24, 0x33	; 51
+ 47c:	88 7f       	andi	r24, 0xF8	; 248
+ 47e:	82 60       	ori	r24, 0x02	; 2
+ 480:	83 bf       	out	0x33, r24	; 51
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:838
+  TCCR1B = (TCCR1B & ~((1<<CS13)|(1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #elif (TIMER_TO_USE_FOR_MILLIS == 1)
+  TCCR1B = (TCCR1B & ~((1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 482:	78 94       	sei
+C:\Users\priyansh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.3.1\cores\tiny/wiring.c:842
+
+  // Enable the overlow interrupt (this is the basic system tic-toc for millis)
+  #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+  sbi(TIMSK, TOIE0);
+ 484:	89 b7       	in	r24, 0x39	; 57
+ 486:	82 60       	ori	r24, 0x02	; 2
+ 488:	89 bf       	out	0x39, r24	; 57
+setup():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:28
+const byte supply_selector_relay = 4;
+const byte motor_relay = 5;
+const byte valve_relay = 6;
+
+void setup() {
+  pinMode(a_tank_top, INPUT_PULLUP);
+ 48a:	62 e0       	ldi	r22, 0x02	; 2
+ 48c:	89 e0       	ldi	r24, 0x09	; 9
+ 48e:	71 de       	rcall	.-798    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:29
+  pinMode(a_tank_middle, INPUT_PULLUP);
+ 490:	62 e0       	ldi	r22, 0x02	; 2
+ 492:	8a e0       	ldi	r24, 0x0A	; 10
+ 494:	6e de       	rcall	.-804    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:30
+  pinMode(a_tank_bottom, INPUT_PULLUP);
+ 496:	62 e0       	ldi	r22, 0x02	; 2
+ 498:	8b e0       	ldi	r24, 0x0B	; 11
+ 49a:	6b de       	rcall	.-810    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:31
+  pinMode(a_manual_start, INPUT_PULLUP);
+ 49c:	62 e0       	ldi	r22, 0x02	; 2
+ 49e:	8c e0       	ldi	r24, 0x0C	; 12
+ 4a0:	68 de       	rcall	.-816    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:32
+  pinMode(b_tank_top, INPUT_PULLUP);
+ 4a2:	62 e0       	ldi	r22, 0x02	; 2
+ 4a4:	8d e0       	ldi	r24, 0x0D	; 13
+ 4a6:	65 de       	rcall	.-822    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:33
+  pinMode(b_tank_middle, INPUT_PULLUP);
+ 4a8:	62 e0       	ldi	r22, 0x02	; 2
+ 4aa:	8e e0       	ldi	r24, 0x0E	; 14
+ 4ac:	62 de       	rcall	.-828    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:34
+  pinMode(b_tank_bottom, INPUT_PULLUP);
+ 4ae:	62 e0       	ldi	r22, 0x02	; 2
+ 4b0:	8f e0       	ldi	r24, 0x0F	; 15
+ 4b2:	5f de       	rcall	.-834    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:35
+  pinMode(b_manual_start, INPUT_PULLUP);
+ 4b4:	62 e0       	ldi	r22, 0x02	; 2
+ 4b6:	80 e1       	ldi	r24, 0x10	; 16
+ 4b8:	5c de       	rcall	.-840    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:36
+  pinMode(b_supply_detect, INPUT_PULLUP);
+ 4ba:	62 e0       	ldi	r22, 0x02	; 2
+ 4bc:	88 e0       	ldi	r24, 0x08	; 8
+ 4be:	59 de       	rcall	.-846    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:38
+
+  pinMode(a_buzzer, OUTPUT);
+ 4c0:	61 e0       	ldi	r22, 0x01	; 1
+ 4c2:	80 e0       	ldi	r24, 0x00	; 0
+ 4c4:	56 de       	rcall	.-852    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:39
+  pinMode(b_buzzer, OUTPUT);
+ 4c6:	61 e0       	ldi	r22, 0x01	; 1
+ 4c8:	81 e0       	ldi	r24, 0x01	; 1
+ 4ca:	53 de       	rcall	.-858    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:40
+  pinMode(supply_selector_relay, OUTPUT);
+ 4cc:	61 e0       	ldi	r22, 0x01	; 1
+ 4ce:	84 e0       	ldi	r24, 0x04	; 4
+ 4d0:	50 de       	rcall	.-864    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:41
+  pinMode(motor_relay, OUTPUT);
+ 4d2:	61 e0       	ldi	r22, 0x01	; 1
+ 4d4:	85 e0       	ldi	r24, 0x05	; 5
+ 4d6:	4d de       	rcall	.-870    	; 0x172 <pinMode>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:42
+  pinMode(valve_relay, OUTPUT);
+ 4d8:	61 e0       	ldi	r22, 0x01	; 1
+ 4da:	86 e0       	ldi	r24, 0x06	; 6
+ 4dc:	4a de       	rcall	.-876    	; 0x172 <pinMode>
+checkTankA():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:58
+    checkManualOnB();
+  }
+}
+
+void checkTankA() {
+  if(checkTank(a_tank_top, a_tank_middle, a_tank_bottom) == 0){
+ 4de:	4b e0       	ldi	r20, 0x0B	; 11
+ 4e0:	6a e0       	ldi	r22, 0x0A	; 10
+ 4e2:	89 e0       	ldi	r24, 0x09	; 9
+ 4e4:	c7 de       	rcall	.-626    	; 0x274 <checkTank(unsigned char, unsigned char, unsigned char)>
+ 4e6:	81 11       	cpse	r24, r1
+ 4e8:	0d c0       	rjmp	.+26     	; 0x504 <main+0x9a>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:59
+    digitalWrite(motor_relay, HIGH);
+ 4ea:	61 e0       	ldi	r22, 0x01	; 1
+ 4ec:	85 e0       	ldi	r24, 0x05	; 5
+ 4ee:	12 de       	rcall	.-988    	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:61
+    while(true){
+      checkManualOnA();
+ 4f0:	33 df       	rcall	.-410    	; 0x358 <checkManualOnA()>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:62
+      if(checkTank(a_tank_top, a_tank_middle, a_tank_bottom) == 2){
+ 4f2:	4b e0       	ldi	r20, 0x0B	; 11
+ 4f4:	6a e0       	ldi	r22, 0x0A	; 10
+ 4f6:	89 e0       	ldi	r24, 0x09	; 9
+ 4f8:	bd de       	rcall	.-646    	; 0x274 <checkTank(unsigned char, unsigned char, unsigned char)>
+ 4fa:	82 30       	cpi	r24, 0x02	; 2
+ 4fc:	c9 f7       	brne	.-14     	; 0x4f0 <main+0x86>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:63
+        digitalWrite(motor_relay, LOW);
+ 4fe:	60 e0       	ldi	r22, 0x00	; 0
+ 500:	85 e0       	ldi	r24, 0x05	; 5
+ 502:	08 de       	rcall	.-1008   	; 0x114 <digitalWrite>
+loop():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:50
+void loop() {
+//  if(digitalRead(b_supply_detect) == LOW){
+//    digitalWrite(a_buzzer, HIGH);
+//  }
+  checkTankA();
+  checkManualOnA();
+ 504:	29 df       	rcall	.-430    	; 0x358 <checkManualOnA()>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:51
+  if(digitalRead(b_supply_detect) == LOW){
+ 506:	88 e0       	ldi	r24, 0x08	; 8
+ 508:	dd dd       	rcall	.-1094   	; 0xc4 <digitalRead>
+ 50a:	89 2b       	or	r24, r25
+ 50c:	41 f7       	brne	.-48     	; 0x4de <main+0x74>
+checkTankB():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:71
+    }
+  }
+}
+
+void checkTankB() {
+  if(checkTank(b_tank_top, b_tank_middle, b_tank_bottom) == 0){
+ 50e:	4f e0       	ldi	r20, 0x0F	; 15
+ 510:	6e e0       	ldi	r22, 0x0E	; 14
+ 512:	8d e0       	ldi	r24, 0x0D	; 13
+ 514:	af de       	rcall	.-674    	; 0x274 <checkTank(unsigned char, unsigned char, unsigned char)>
+ 516:	81 11       	cpse	r24, r1
+ 518:	21 c0       	rjmp	.+66     	; 0x55c <main+0xf2>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:72
+    digitalWrite(supply_selector_relay, HIGH);
+ 51a:	61 e0       	ldi	r22, 0x01	; 1
+ 51c:	84 e0       	ldi	r24, 0x04	; 4
+ 51e:	fa dd       	rcall	.-1036   	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:73
+    digitalWrite(valve_relay, HIGH);
+ 520:	61 e0       	ldi	r22, 0x01	; 1
+ 522:	86 e0       	ldi	r24, 0x06	; 6
+ 524:	f7 dd       	rcall	.-1042   	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:74
+    delay(valve_wait_time);
+ 526:	60 e4       	ldi	r22, 0x40	; 64
+ 528:	7f e1       	ldi	r23, 0x1F	; 31
+ 52a:	80 e0       	ldi	r24, 0x00	; 0
+ 52c:	90 e0       	ldi	r25, 0x00	; 0
+ 52e:	78 de       	rcall	.-784    	; 0x220 <delay>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:75
+    digitalWrite(motor_relay, HIGH);
+ 530:	61 e0       	ldi	r22, 0x01	; 1
+ 532:	85 e0       	ldi	r24, 0x05	; 5
+ 534:	ef dd       	rcall	.-1058   	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:77
+    while(true){
+      checkManualOnB();
+ 536:	b5 de       	rcall	.-662    	; 0x2a2 <checkManualOnB()>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:78
+      if(digitalRead(b_supply_detect) == HIGH){
+ 538:	88 e0       	ldi	r24, 0x08	; 8
+ 53a:	c4 dd       	rcall	.-1144   	; 0xc4 <digitalRead>
+ 53c:	01 97       	sbiw	r24, 0x01	; 1
+ 53e:	81 f4       	brne	.+32     	; 0x560 <main+0xf6>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:79
+        digitalWrite(motor_relay, LOW);
+ 540:	60 e0       	ldi	r22, 0x00	; 0
+ 542:	85 e0       	ldi	r24, 0x05	; 5
+ 544:	e7 dd       	rcall	.-1074   	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:80
+        digitalWrite(valve_relay, LOW);
+ 546:	60 e0       	ldi	r22, 0x00	; 0
+ 548:	86 e0       	ldi	r24, 0x06	; 6
+ 54a:	e4 dd       	rcall	.-1080   	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:81
+        digitalWrite(supply_selector_relay, LOW);
+ 54c:	60 e0       	ldi	r22, 0x00	; 0
+ 54e:	84 e0       	ldi	r24, 0x04	; 4
+ 550:	e1 dd       	rcall	.-1086   	; 0x114 <digitalWrite>
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:82
+        delay(valve_wait_time);
+ 552:	60 e4       	ldi	r22, 0x40	; 64
+ 554:	7f e1       	ldi	r23, 0x1F	; 31
+ 556:	80 e0       	ldi	r24, 0x00	; 0
+ 558:	90 e0       	ldi	r25, 0x00	; 0
+ 55a:	62 de       	rcall	.-828    	; 0x220 <delay>
+loop():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:53
+//  }
+  checkTankA();
+  checkManualOnA();
+  if(digitalRead(b_supply_detect) == LOW){
+    checkTankB();
+    checkManualOnB();
+ 55c:	a2 de       	rcall	.-700    	; 0x2a2 <checkManualOnB()>
+ 55e:	bf cf       	rjmp	.-130    	; 0x4de <main+0x74>
+checkTankB():
+E:\Dropbox\codes and designs\proteus\motor controller\software\motor_controller/motor_controller.ino:85
+        digitalWrite(valve_relay, LOW);
+        digitalWrite(supply_selector_relay, LOW);
+        delay(valve_wait_time);
+        break;
+      }
+      if(checkTank(b_tank_top, b_tank_middle, b_tank_bottom) == 2){
+ 560:	4f e0       	ldi	r20, 0x0F	; 15
+ 562:	6e e0       	ldi	r22, 0x0E	; 14
+ 564:	8d e0       	ldi	r24, 0x0D	; 13
+ 566:	86 de       	rcall	.-756    	; 0x274 <checkTank(unsigned char, unsigned char, unsigned char)>
+ 568:	82 30       	cpi	r24, 0x02	; 2
+ 56a:	29 f7       	brne	.-54     	; 0x536 <main+0xcc>
+ 56c:	e9 cf       	rjmp	.-46     	; 0x540 <main+0xd6>
+
+0000056e <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 56e:	f8 94       	cli
+
+00000570 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 570:	ff cf       	rjmp	.-2      	; 0x570 <__stop_program>

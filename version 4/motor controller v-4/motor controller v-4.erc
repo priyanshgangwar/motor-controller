@@ -1,0 +1,15 @@
+ERC report (17-Jun-20 8:42:05 PM, Encoding UTF8 )
+
+***** Sheet /
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(52.07 mm, 40.64 mm): Pin 1 (Power input) of component #PWR017 is not driven (Net 1).
+ErrType(7): A pin with a “no connection” flag is connected
+    @(170.18 mm, 25.40 mm): More than 1 pin connected to an UnConnect symbol.
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(133.35 mm, 152.40 mm): Pin 1 (Power input) of component #PWR016 is not driven (Net 7).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(132.08 mm, 48.26 mm): Pin 10 (Power input) of component U1 is not driven (Net 46).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(134.62 mm, 48.26 mm): Pin 30 (Power input) of component U1 is not driven (Net 55).
+
+ ** ERC messages: 5  Errors 0  Warnings 5

@@ -1,0 +1,49 @@
+Source:	E:\projects\motor controller\version 4\motor controller v-4\motor controller v-4.sch
+Date:	17-Jun-20 8:48:21 PM
+Tool:	Eeschema (5.1.2)-2
+Component Count:	44
+Ref	Value	Part	Footprint	Description	Vendor
+C1	10uF	Device:CP	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	Polarized capacitor	
+C2	0.1uF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+C3	0.1uF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+C4	0.1uF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+C5	0.01uF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+C6	20pF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+C7	20pF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+C8	0.1uF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+C9	0.01uF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+C10	0.1uF	Device:C	Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm	Unpolarized capacitor	
+D1	LED	Device:LED	LED_THT:LED_D5.0mm	Light emitting diode	
+D2	LED	Device:LED	LED_THT:LED_D5.0mm	Light emitting diode	
+D3	LED	Device:LED	LED_THT:LED_D5.0mm	Light emitting diode	
+J1	Screw_Terminal_01x02	Connector:Screw_Terminal_01x02	TerminalBlock:TerminalBlock_bornier-2_P5.08mm	Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J2	DB9_Male	Connector:DB9_Male	Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm	9-pin male D-SUB connector	
+J3	DB9_Male	Connector:DB9_Male	Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm	9-pin male D-SUB connector	
+J4	Screw_Terminal_01x02	Connector:Screw_Terminal_01x02	TerminalBlock:TerminalBlock_bornier-2_P5.08mm	Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J5	Screw_Terminal_01x04	Connector:Screw_Terminal_01x04	TerminalBlock:TerminalBlock_bornier-4_P5.08mm	Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J6	AVR-ISP-6	Connector:AVR-ISP-6	Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical	Atmel 6-pin ISP connector	
+K1	G5LE-1	Relay:G5LE-1	Relay_THT:Relay_SPDT_Omron-G5LE-1	Omron G5LE relay, Miniature Single Pole, SPDT, 10A	
+K2	G5LE-1	Relay:G5LE-1	Relay_THT:Relay_SPDT_Omron-G5LE-1	Omron G5LE relay, Miniature Single Pole, SPDT, 10A	
+K3	G5LE-1	Relay:G5LE-1	Relay_THT:Relay_SPDT_Omron-G5LE-1	Omron G5LE relay, Miniature Single Pole, SPDT, 10A	
+L1	10uH	Device:L_Small	Inductor_THT:L_Radial_D6.0mm_P4.00mm	Inductor, small symbol	
+R1	150R	Device:R	Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P7.62mm_Vertical	Resistor	
+R2	500k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R3	500k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R4	500k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R5	800k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R6	800k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R7	800k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R8	500k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R9	500k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R10	500k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R11	800k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R12	800k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+R13	800k	Device:R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	
+SW1	SW_SPDT	Switch:SW_SPDT	Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled	Switch, single pole double throw	
+SW2	SW_SPDT	Switch:SW_SPDT	Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled	Switch, single pole double throw	
+SW3	SW_SPDT	Switch:SW_SPDT	Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled	Switch, single pole double throw	
+SW4	SW_SPST	Switch:SW_SPST	Button_Switch_THT:SW_PUSH_6mm_H5mm	Single Pole Single Throw (SPST) switch	
+SW5	SW_SPDT	Switch:SW_SPDT	Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled	Switch, single pole double throw	
+U1	ATmega8535-16PU	MCU_Microchip_ATmega:ATmega8535-16PU	Package_DIP:DIP-40_W15.24mm	16MHz, 8kB Flash, 512B SRAM, 512B EEPROM, DIP-40	
+U2	ULN2003	Transistor_Array:ULN2003	Package_DIP:DIP-16_W7.62mm_Socket_LongPads	High Voltage, High Current Darlington Transistor Arrays, SOIC16/SOIC16W/DIP16/TSSOP16	
+Y1	Crystal	Device:Crystal	Crystal:Crystal_HC50_Vertical	Two pin crystal	
